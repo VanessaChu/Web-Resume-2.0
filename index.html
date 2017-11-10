@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-4.0.0-alpha.6-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="bootstrap-4.0.0-alpha.6-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+      
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <script src="js/jsTop.js"></script>
+</head>
+  <body onload="window.location.href='#about'">
+    <div class = "container-fluid h-100">
+      <div class="row">
+        <div class="content1 col-xl-3">
+            <div class="name-title">
+                <div class="name">Vanessa Chu</div>
+                <div class="title">Web Designer</div>
+            </div>
+            <div class="image-container">
+                <img src="assets/mypic.jpg" class="pic"/>
+            </div>
+        </div>
+        <div class="content2 col-xl-9 col-lg-12">
+            <div class="row">
+                <nav>
+                    <ul class="navmenu" id="dropDownClick">
+                        <div class="left-menu">
+                            <li><a href="#about" onclick="clickSingleA(this)" class="single active" id="act">About me</a></li>
+                            <li><a href="#Resume" onclick="clickSingleA(this)" class="single">Resume</a></li>
+                            <li><a href="#Portfolio" onclick="clickSingleA(this)" class="single">Portfolio</a></li>
+                            <li><a href="#about" onclick="clickSingleA(this)" class="single">Contact</a></li>
+                            <li>Vanessa Chu</li>
+                        </div>
+                        <div class="right-menu">
+                            <li class="topright-nav"><a href="#facebook"></a><div id="facebook-icon" class="icons"></div></li>
+                            <li class="topright-nav"><a href="#linkedin" ></a><div id="linkedin-icon" class="icons"></div></li>
+                            <li class="topright-nav"><a href="#linkedin"></a><div id="github-icon" class="icons"></div></li>
+                            <li class="topright-nav dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()"><img src="assets/Hamburger_icon.png"/></a></li>
+                        </div>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+      </div>
+    </div>
+      
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="bootstrap-4.0.0-alpha.6-dist/css/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="js/myTestJs.js"></script>
+  </body>
+</html>

@@ -1,0 +1,173 @@
+/*#############DEFAULTS#############*/
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    font-family: 'Oswald', sans-serif;
+    height:100%;
+}
+h1{
+    font-size: 26px;
+    margin:0;
+}
+
+.row{
+    height:100%;
+    overflow:hidden;
+}
+
+/*#############LEFT PANEL#############*/
+.content1{
+    background:#b6d0db;
+    text-align:center;
+    align-content: center;
+    -webkit-box-shadow: inset -10px 0px 27px 0px rgba(157,187,199,1);
+    -moz-box-shadow: inset -10px 0px 27px 0px rgba(157,187,199,1);
+    box-shadow: inset -10px 0px 27px 0px rgba(157,187,199,1);
+
+}
+
+.name-title{
+    margin-top:38px;
+}
+.name{
+    font-size: 50px;
+    color:white;
+    font-weight:200;
+}
+
+.title{
+    color:white;
+    font-weight:100;
+    font-size: 18px;
+}
+.content1 .image-container{
+    margin-top:50%;
+}
+
+.content1 img{
+    height:auto;
+    width:70%;
+    border-radius:50%;
+    border: 1px solid white;
+}
+
+
+/*#############RIGHT PANEL#############*/
+.content2{
+    background:#fff;
+    width:100%;
+}
+
+/**************NAV BAR ****************/
+
+nav{
+    width:100%;
+}
+ul.navmenu li{
+    margin:20px;
+    margin-top: 60px;
+    font-size: 17px;
+    display:block;
+    float:left;
+}
+
+ul.navmenu li a{
+    color: black;
+}
+
+ul.navmenu li a:hover{
+    text-decoration: none;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 3px;
+}
+
+ul.navmenu li a.active{
+    text-decoration: none;
+    border-bottom: 2px solid #FFCD38;
+    padding-bottom: 3px;
+}
+
+ul.navmenu li.topright-nav{
+    margin:4px;
+    margin-top:55px;
+}
+
+div.left-menu{
+    margin-left:30px;
+}
+
+div.right-menu{
+    margin-right:80px;
+    float:right;
+}
+
+ul.navmenu li img{
+    width:30px;
+    height:30px;
+}
+
+.icons{
+    height:30px;
+    width:30px;
+}
+
+#facebook-icon{
+    background-image:url(assets/facebook-gray.png);
+}
+
+#facebook-icon:hover{
+    background-image:url(assets/facebook-yellow.png);
+}
+
+#linkedin-icon{
+    background-image:url(assets/linkedin-gray.png);
+}
+
+#linkedin-icon:hover{
+    background-image:url(assets/linkedin-yellow.png);
+}
+
+#github-icon{
+    background-image:url(assets/github-gray.png);
+}
+
+#github-icon:hover{
+    background-image:url(assets/github-yellow.png);
+}
+
+ul.navmenu-mobile{
+    display:none;
+}
+
+/*############# MOBILE #############*/
+@media screen and (max-width: 1200px){
+    .content1{
+        display:none;
+    }
+    
+    ul.navmenu-mobile{
+        display:block;
+        padding:20px;
+        border-bottom:1px solid #E6E6E6;
+    }
+    
+    ul.navmenu-mobile li{
+        list-style: none;
+    }
+    
+    ul.navmenu-mobile li.dropdownIcon{
+        position:relative;
+        bottom:30px;
+        left:60px;
+    }
+    ul.navmenu li{
+        display:none;
+    }
+    
+    ul.navmenu.responsive li{
+        display:block;
+        float:none;
+    }
+}
