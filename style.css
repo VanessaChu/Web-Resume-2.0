@@ -94,10 +94,6 @@ ul.navmenu li.topright-nav{
     margin-top:55px;
 }
 
-div.left-menu{
-    margin-left:30px;
-}
-
 div.right-menu{
     margin-right:80px;
     float:right;
@@ -147,6 +143,7 @@ ul.navmenu-mobile{
         display:none;
     }
     
+/**************NAV BAR ****************/
     ul.navmenu-mobile{
         display:block;
         padding:20px;
@@ -166,8 +163,38 @@ ul.navmenu-mobile{
         display:none;
     }
     
-    ul.navmenu.responsive li{
+    ul.navmenu.responsive{
+        padding-left:0px;
+        overflow:auto; 
+        display:table
+        vertical-align:middle;
+        -webkit-box-shadow: 0px 10px 35px -2px rgba(230,230,230,1);
+        -moz-box-shadow: 0px 10px 35px -2px rgba(230,230,230,1);
+        box-shadow: 0px 10px 35px -2px rgba(230,230,230,1);
+    }
+    
+    ul.navmenu.responsive div.left-menu li{
         display:block;
+        text-align: center;
+        margin:25px;
         float:none;
     }
+    
+    ul.navmenu.responsive div.right-menu{
+        margin:0px;
+        width:100%;
+        display:table-row;
+
+    }
+    
+    ul.navmenu.responsive div.right-menu {
+        margin:0px;
+        
+    }
+    ul.navmenu.responsive div.right-menu li{
+        display:inline;
+    }
+    
+    
+    
 }
