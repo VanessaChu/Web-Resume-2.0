@@ -58,6 +58,12 @@ h1{
 .content2{
     background:#fff;
     width:100%;
+    padding:0px;
+}
+
+.content2-container{
+    height:100%;
+    border-left: 3px solid #e0e0e0;
 }
 
 /**************NAV BAR ****************/
@@ -142,7 +148,10 @@ ul.navmenu-mobile{
     .content1{
         display:none;
     }
-    
+/**************RIGHT PANEL ****************/
+    .content2-container{
+        border:none;
+    }
 /**************NAV BAR ****************/
     ul.navmenu-mobile{
         display:block;
