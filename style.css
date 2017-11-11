@@ -12,9 +12,35 @@ h1{
     margin:0;
 }
 
+h2{
+    font-size: 24px;
+    color:white;
+}
+
+h3{
+    font-size:20px;
+    padding-bottom:2px;
+    margin-bottom:12px;
+}
+
+h4{
+    font-size:16px;
+    color:gray;
+    font-weight:100;
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-size:14px;
+    line-height:25px;
+    color:dimgray
+}
 .row{
-    height:100%;
     overflow:hidden;
+}
+
+.container-all{
+    height:100%
 }
 
 /*#############LEFT PANEL#############*/
@@ -25,7 +51,7 @@ h1{
     -webkit-box-shadow: inset -10px 0px 27px 0px rgba(157,187,199,1);
     -moz-box-shadow: inset -10px 0px 27px 0px rgba(157,187,199,1);
     box-shadow: inset -10px 0px 27px 0px rgba(157,187,199,1);
-
+    height:100%;
 }
 
 .name-title{
@@ -63,7 +89,13 @@ h1{
 
 .content2-container{
     height:100%;
-    border-left: 3px solid #e0e0e0;
+    border-left: 4px solid #e0e0e0;
+}
+
+h3.underline-this{
+    width:auto;
+    border-bottom:2px solid #FFCD38;
+    display:inline;
 }
 
 /**************NAV BAR ****************/
@@ -143,6 +175,31 @@ ul.navmenu-mobile{
     display:none;
 }
 
+/**************SECTION ****************/
+
+.section-header{
+    background-color:#FFCD38;
+    margin-top:30px;
+    margin-left:15px;
+    width:180px;
+    height:55px;
+    padding:15px 10px 0px 70px ;
+}
+
+.section-subheader{
+    margin-top:50px;
+    margin-left: 10px;
+}
+
+.section-pic{
+    display:none;
+}
+
+.section-container{
+    padding:50px;
+}
+
+
 /*############# MOBILE #############*/
 @media screen and (max-width: 1200px){
     .content1{
@@ -188,22 +245,38 @@ ul.navmenu-mobile{
         margin:25px;
         float:none;
     }
-    
     ul.navmenu.responsive div.right-menu{
-        margin:0px;
         width:100%;
-        display:table-row;
-
+        display:block;
+        text-align:center;
+        margin:0 auto;
     }
     
-    ul.navmenu.responsive div.right-menu {
-        margin:0px;
-        
+    ul.navmenu div.social-icons{
+        display:inline-block;
+        position:relative;
+        bottom:40px;
     }
     ul.navmenu.responsive div.right-menu li{
         display:inline;
     }
+
     
+/**************SECTION ****************/
+    .section-pic{
+        display:block;
+        width:100%;
+    }
     
+    .section-subheader{
+        display:none;
+    }
+    .section-pic img{
+        border-radius:50%;
+        width:25%;
+        margin:auto;
+        display:block;
+        margin-top:20px;
+    }
     
 }
