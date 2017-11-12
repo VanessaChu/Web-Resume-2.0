@@ -36,12 +36,14 @@ p{
     color:dimgray
 }
 .row{
-    overflow-x:hidden;
-    overflow-y:scroll;
+
 }
 
 .container-all{
     height:100%
+}
+
+.container-all row{
 }
 
 /*#############LEFT PANEL#############*/
@@ -204,12 +206,10 @@ ul.navmenu-mobile{
 
 .testimonial-container{
     position:relative;
+    width:100%;
+    background:blue;
 }
 
-.testimonial-slider{
-    overflow:visible;
-    position:relative;
-}
 .testimonial-box{
     background:#FCFCFC;
     border:2px solid #e0e0e0;
@@ -265,7 +265,7 @@ ul.navmenu-mobile{
     display:block;
     text-align:center;
     position:absolute;
-    bottom:-250px;
+    bottom:-240px;
 }
 
 #testimonial-prev:hover, 
@@ -321,12 +321,12 @@ ul.navmenu-mobile{
     
     ul.navmenu.responsive{
         padding-left:0px;
-        overflow:auto; 
         display:table
         vertical-align:middle;
         -webkit-box-shadow: 0px 10px 35px -2px rgba(230,230,230,1);
         -moz-box-shadow: 0px 10px 35px -2px rgba(230,230,230,1);
         box-shadow: 0px 10px 35px -2px rgba(230,230,230,1);
+        padding-bottom:80px
     }
     
     ul.navmenu.responsive div.left-menu li{
